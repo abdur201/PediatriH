@@ -1,0 +1,36 @@
+﻿@model IEnumerable<web.Models.AcilModel>
+
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<div class="container">
+    <h2>Acil Kayıtları</h2>
+    <a href="@Url.Action("Create", "Acil")" class="btn btn-primary">Yeni Acil Kayıt Ekle</a>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Acil ID</th>
+                <th>Tarih/Zaman</th>
+                <th>Bölüm ID</th>
+                <th>Bilgi</th>
+                <th>İşlemler</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.AcilId</td>
+                    <td>@item.DateTime.ToString("yyyy-MM-dd HH:mm")</td>
+                    <td>@item.BolumId</td>
+                    <td>@item.Info</td>
+                    <td>
+                        <a href="@Url.Action("Edit", "Acil", new { id = item.AcilId })" class="btn btn-warning">Düzenle</a>
+                        <a href="@Url.Action("Delete", "Acil", new { id = item.AcilId })" class="btn btn-danger">Sil</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

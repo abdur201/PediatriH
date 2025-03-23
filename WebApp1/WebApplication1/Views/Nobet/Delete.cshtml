@@ -1,0 +1,17 @@
+﻿@model web.Models.NobetModel
+
+
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h2>Nobet Kayıdını Sil</h2>
+
+<p>Bu kaydı silmek istediğinizden emin misiniz?</p>
+
+<form asp-action="DeleteConfirmed" method="post">
+ 
+    <input type="hidden" name="id" value="@Model.NobetId" />  
+    <button type="submit" class="btn btn-danger">Evet, Sil</button>
+    <a href="@Url.Action("Index", "Nobet")" class="btn btn-secondary">Hayır, İptal</a> 
+</form>

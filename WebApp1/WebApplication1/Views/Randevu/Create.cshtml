@@ -1,0 +1,23 @@
+﻿@model web.Models.RandevuModel
+
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h2>Yeni Randevu Ekle</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="RandevuTarihi">Randevu Tarihi</label>
+        <input type="datetime-local" class="form-control" id="RandevuTarihi" name="RandevuTarihi" required />
+    </div>
+    <div class="form-group">
+        <label for="AsistanId">Asistan ID</label>
+        <input type="number" class="form-control" id="AsistanId" name="AsistanId" required />
+    </div>
+    <div class="form-group">
+        <label for="OgretimId">Öğretim ID</label>
+        <input type="text" class="form-control" id="OgretimId" name="OgretimId" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>

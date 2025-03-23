@@ -1,0 +1,68 @@
+﻿@model web.Models.OgretimModel 
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öğretim Görevlisi Düzenle</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <style>
+
+        .container {
+            margin-top: 50px;
+            max-width: 800px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .btn {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Öğretim Görevlisi Düzenle</h2>
+        
+      
+        <form asp-action="Edit" method="post">
+            <div class="form-group">
+                <label for="FullName">Ad-Soyad</label>
+                <input type="text" class="form-control" id="FullName" name="FullName" value="@Model.FullName" required />
+            </div>
+
+            <div class="form-group">
+                <label for="Info">Hakkında</label>
+                <textarea class="form-control" id="Info" name="Info" rows="4" required>@Model.Info</textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="PhoneNumber">Telefon</label>
+                <input type="text" class="form-control" id="PhoneNumber" name="PhoneNumber" value="@Model.PhoneNumber" required />
+            </div>
+
+            <div class="form-group">
+                <label for="Email">E-posta</label>
+                <input type="email" class="form-control" id="Email" name="Email" value="@Model.Email" required />
+            </div>
+
+            <input type="hidden" name="OgretimId" value="@Model.OgretimId" /> 
+
+            <button type="submit" class="btn btn-primary">Kaydet</button>
+        </form>
+
+        <br />
+        <a href="@Url.Action("Index", "Ogretim")" class="btn btn-default">Geri Dön</a> 
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

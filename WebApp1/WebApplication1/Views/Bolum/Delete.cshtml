@@ -1,0 +1,23 @@
+﻿@model web.Models.BolumModel
+
+@{
+    ViewData["Title"] = "Bolum Sil";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>Bu bolumu silmek istediğinizden emin misiniz?</p>
+
+<div>
+    <h4>Bolum Adı: @Model.BolumName</h4>
+    <p>Hasta Sayısı: @Model.HastaSayisi</p>
+    <p>Boş Yatak Sayısı: @Model.BosYatakSayisi</p>
+    <p>Bilgi: @Model.Info</p>
+</div>
+
+<form method="post" asp-action="Delete">
+    <input type="hidden" name="BolumId" value="@Model.BolumId" />
+    <button type="submit" class="btn btn-danger">Evet, Sil</button>
+</form>
+
+<a href="@Url.Action("Index", "Bolum")" class="btn btn-secondary">İptal</a>

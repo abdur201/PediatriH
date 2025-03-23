@@ -1,0 +1,119 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WebApplication1
+build_property.RootNamespace = WebApplication1
+build_property.ProjectDir = C:\Users\Abdurrahman\source\repos\WebApplication1\WebApplication1\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Abdurrahman\source\repos\WebApplication1\WebApplication1
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Abdurrahman/source/repos/WebApplication1/WebApplication1/Views/Acil/AcilView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNpbFxBY2lsVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abdurrahman/source/repos/WebApplication1/WebApplication1/Views/Acil/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNpbFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abdurrahman/source/repos/WebApplication1/WebApplication1/Views/Acil/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNpbFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abdurrahman/source/repos/WebApplication1/WebApplication1/Views/Acil/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNpbFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abdurrahman/source/repos/WebApplication1/WebApplication1/Views/Asistan/AsistanView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpc3RhblxBc2lzdGFuVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abdurrahman/source/repos/WebApplication1/WebApplication1/Views/Asistan/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpc3RhblxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abdurrahman/source/repos/WebApplication1/WebApplication1/Views/Bolum/BolumView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9sdW1cQm9sdW1WaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abdurrahman/source/repos/WebApplication1/WebApplication1/Views/Bolum/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9sdW1cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abdurrahman/source/repos/WebApplication1/WebApplication1/Views/Bolum/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9sdW1cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abdurrahman/source/repos/WebApplication1/WebApplication1/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abdurrahman/source/repos/WebApplication1/WebApplication1/Views/Nobet/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm9iZXRcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abdurrahman/source/repos/WebApplication1/WebApplication1/Views/Nobet/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm9iZXRcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abdurrahman/source/repos/WebApplication1/WebApplication1/Views/Nobet/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm9iZXRcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abdurrahman/source/repos/WebApplication1/WebApplication1/Views/Nobet/NobetView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm9iZXRcTm9iZXRWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abdurrahman/source/repos/WebApplication1/WebApplication1/Views/Ogretim/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZXRpbVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abdurrahman/source/repos/WebApplication1/WebApplication1/Views/Ogretim/OgretimView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZXRpbVxPZ3JldGltVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abdurrahman/source/repos/WebApplication1/WebApplication1/Views/Randevu/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abdurrahman/source/repos/WebApplication1/WebApplication1/Views/Randevu/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abdurrahman/source/repos/WebApplication1/WebApplication1/Views/Randevu/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abdurrahman/source/repos/WebApplication1/WebApplication1/Views/Randevu/RandevuView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dVxSYW5kZXZ1Vmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abdurrahman/source/repos/WebApplication1/WebApplication1/Views/Shared/GirisView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEdpcmlzVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abdurrahman/source/repos/WebApplication1/WebApplication1/Views/Shared/Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abdurrahman/source/repos/WebApplication1/WebApplication1/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 

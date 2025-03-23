@@ -1,0 +1,38 @@
+﻿@model web.Models.RandevuModel
+
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h2>Randevu Düzenle</h2>
+
+
+<h2>Randevu Düzenle</h2>
+
+<form asp-action="Edit" asp-route-id="@Model.RandevuId" method="post">
+    
+    <div class="form-group">
+        <label for="RandevuId">Randevu ID</label>
+        <input type="text" class="form-control" id="RandevuId" name="RandevuId" value="@Model.RandevuId" readonly />
+    </div>
+    <div class="form-group">
+        <label for="RandevuTarihi">Randevu Tarihi</label>
+        <input type="datetime-local" class="form-control" id="RandevuTarihi" name="RandevuTarihi" value="@Model.RandevuTarihi.ToString("yyyy-MM-ddTHH:mm")" required />
+    </div>
+    <div class="form-group">
+        <label for="AsistanId">Asistan ID</label>
+        <input type="number" class="form-control" id="AsistanId" name="AsistanId" value="@Model.AsistanId" required />
+    </div>
+    <div class="form-group">
+        <label for="OgretimId">Öğretim ID</label>
+        <input type="text" class="form-control" id="OgretimId" name="OgretimId" value="@Model.OgretimId" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>
+
+<a href="@Url.Action("Index", "Randevu")" class="btn btn-secondary">İptal</a>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+

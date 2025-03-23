@@ -1,0 +1,30 @@
+﻿@model IEnumerable<web.Models.AcilModel>
+
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h2>Yeni Acil Kayıt Ekle</h2>
+
+<form asp-action="Create" method="post">
+    
+
+    <div class="form-group">
+        <label for="DateTime">Tarih/Zaman</label>
+        <input type="datetime-local" class="form-control" id="DateTime" name="DateTime" required />
+    </div>
+
+    <div class="form-group">
+        <label for="BolumId">Bölüm ID</label>
+        <input type="number" class="form-control" id="BolumId" name="BolumId" required />
+    </div>
+
+    <div class="form-group">
+        <label for="Info">Bilgi</label>
+        <input type="text" class="form-control" id="Info" name="Info" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>
+
+<a href="@Url.Action("Index", "Acil")" class="btn btn-secondary">İptal</a>

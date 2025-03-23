@@ -1,0 +1,49 @@
+﻿
+
+<head>
+
+@{
+   
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+</head>
+
+@model IEnumerable<web.Models.NobetModel>
+
+@{
+    ViewData["Title"] = "Nobet Listesi";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<a href="@Url.Action("Create", "Nobet")" class="btn btn-primary">Yeni Nobet Ekle</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.NobetId)</th>
+            <th>@Html.DisplayNameFor(model => model.BolumId)</th>
+            <th>@Html.DisplayNameFor(model => model.AsistanId)</th>
+            <th>@Html.DisplayNameFor(model => model.NobetBas)</th>
+            <th>@Html.DisplayNameFor(model => model.NobetBit)</th>
+            <th>Aksiyonlar</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.NobetId</td>
+                <td>@item.BolumId</td>
+                <td>@item.AsistanId</td>
+                <td>@item.NobetBas</td>
+                <td>@item.NobetBit</td>
+                <td>
+                    <a href="@Url.Action("Edit", "Nobet", new { id = item.NobetId })" class="btn btn-warning">Düzenle</a>
+                    <a href="@Url.Action("Delete", "Nobet", new { id = item.NobetId })" class="btn btn-danger">Sil</a>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>

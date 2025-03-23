@@ -1,0 +1,33 @@
+﻿@model web.Models.RandevuModel
+
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h2>Randevu Sil</h2>
+
+<p>Randevuyu silmek istediğinizden emin misiniz?</p>
+
+<table class="table">
+    <tr>
+        <th>Randevu ID</th>
+        <td>@Model.RandevuId</td>
+    </tr>
+    <tr>
+        <th>Randevu Tarihi</th>
+        <td>@Model.RandevuTarihi.ToString("dd.MM.yyyy HH:mm")</td>
+    </tr>
+    <tr>
+        <th>Asistan ID</th>
+        <td>@Model.AsistanId</td>
+    </tr>
+    <tr>
+        <th>Öğretim ID</th>
+        <td>@Model.OgretimId</td>
+    </tr>
+</table>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <button type="submit" class="btn btn-danger">Sil</button>
+    <a href="@Url.Action("Index", "Randevu")" class="btn btn-secondary">İptal</a>
+</form>

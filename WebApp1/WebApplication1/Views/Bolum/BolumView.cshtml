@@ -1,0 +1,37 @@
+﻿@model IEnumerable<web.Models.BolumModel>
+
+@{
+    ViewData["Title"] = "Bolum Listesi";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Bolum Adı</th>
+            <th>Hasta Sayısı</th>
+            <th>Boş Yatak Sayısı</th>
+            <th>Bilgi</th>
+            <th>Aksiyonlar</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var bolum in Model)
+        {
+            <tr>
+                <td>@bolum.BolumName</td>
+                <td>@bolum.HastaSayisi</td>
+                <td>@bolum.BosYatakSayisi</td>
+                <td>@bolum.Info</td>
+                <td>
+                    <a href="@Url.Action("Edit", "Bolum", new { id = bolum.BolumId })">Düzenle</a> 
+                  
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+

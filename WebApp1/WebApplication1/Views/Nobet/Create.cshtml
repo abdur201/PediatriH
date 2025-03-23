@@ -1,0 +1,32 @@
+﻿@model IEnumerable<web.Models.NobetModel>
+
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h2>Yeni Nobet Ekle</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="BolumId">Bölüm ID</label>
+        <input type="number" class="form-control" id="BolumId" name="BolumId" required />
+    </div>
+
+    <div class="form-group">
+        <label for="AsistanId">Asistan ID</label>
+        <input type="number" class="form-control" id="AsistanId" name="AsistanId" required />
+    </div>
+
+    <div class="form-group">
+        <label for="NobetBas">Nöbet Başlangıç</label>
+        <input type="datetime-local" class="form-control" id="NobetBas" name="NobetBas" required />
+    </div>
+
+    <div class="form-group">
+        <label for="NobetBit">Nöbet Bitiş</label>
+        <input type="datetime-local" class="form-control" id="NobetBit" name="NobetBit" required />
+    </div>
+
+    <button type="submit" class="btn btn-success">Kaydet</button>
+    <a href="@Url.Action("Index", "Nobet")" class="btn btn-default">Geri Dön</a>
+</form>

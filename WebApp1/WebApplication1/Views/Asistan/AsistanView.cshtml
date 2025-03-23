@@ -1,0 +1,54 @@
+﻿@model IEnumerable<web.Models.AsistanModel>
+
+@{
+    ViewData["Title"] = "Asistan Listesi";
+    Layout = "~/Views/Shared/Layout.cshtml"; 
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>@ViewData["Title"]</h1>
+
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Full Name</th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
+                    <th>Info</th>
+                    <th>Aksiyonlar</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var asistan in Model)
+                {
+                    <tr>
+                        <td>@asistan.AsistanId</td>
+                        <td>@asistan.FullName</td>
+                        <td>@asistan.PhoneNumber</td>
+                        <td>@asistan.Email</td>
+                        <td>@asistan.Info</td>
+                        <td>
+                           
+                            <a href="@Url.Action("Edit", "Asistan", new { id = asistan.AsistanId })" class="btn btn-warning">Düzenle</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

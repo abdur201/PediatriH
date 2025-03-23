@@ -1,0 +1,35 @@
+﻿@model web.Models.BolumModel
+
+@{
+    ViewData["Title"] = "Bolum Düzenle";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form method="post" asp-action="Edit">
+    <input type="hidden" name="BolumId" value="@Model.BolumId" />
+    <div class="form-group">
+        <label for="BolumName">Bolum Adı</label>
+        <input type="text" class="form-control" id="BolumName" name="BolumName" value="@Model.BolumName" required />
+    </div>
+    <div class="form-group">
+        <label for="HastaSayisi">Hasta Sayısı</label>
+        <input type="number" class="form-control" id="HastaSayisi" name="HastaSayisi" value="@Model.HastaSayisi" required />
+    </div>
+    <div class="form-group">
+        <label for="BosYatakSayisi">Boş Yatak Sayısı</label>
+        <input type="number" class="form-control" id="BosYatakSayisi" name="BosYatakSayisi" value="@Model.BosYatakSayisi" required />
+    </div>
+    <div class="form-group">
+        <label for="Info">Bilgi</label>
+        <textarea class="form-control" id="Info" name="Info">@Model.Info</textarea>
+    </div>
+    <div class="form-group">
+        <label for="OgretimId">Ogretim ID</label>
+        <input type="number" class="form-control" id="OgretimId" name="OgretimId" value="@Model.OgretimId" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>
+
+<a href="@Url.Action("Index", "Bolum")" class="btn btn-secondary">Geri</a>

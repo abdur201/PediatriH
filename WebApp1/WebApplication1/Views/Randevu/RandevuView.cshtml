@@ -1,0 +1,37 @@
+﻿@model IEnumerable<web.Models.RandevuModel>
+
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+    ViewData["Title"] = "Randevu Listesi";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<a href="@Url.Action("Create", "Randevu")" class="btn btn-primary">Yeni Randevu Ekle</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Randevu ID</th>
+            <th>Randevu Tarihi</th>
+            <th>Asistan ID</th>
+            <th>Öğretim ID</th>
+            <th>Aksiyonlar</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var randevu in Model)
+        {
+            <tr>
+                <td>@randevu.RandevuId</td>
+                <td>@randevu.RandevuTarihi.ToString("dd.MM.yyyy HH:mm")</td>
+                <td>@randevu.AsistanId</td>
+                <td>@randevu.OgretimId</td>
+                <td>
+                    <a href="@Url.Action("Edit", "Randevu", new { id = randevu.RandevuId })" class="btn btn-warning">Düzenle</a>
+                    <a href="@Url.Action("Delete", "Randevu", new { id = randevu.RandevuId })" class="btn btn-danger">Sil</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
